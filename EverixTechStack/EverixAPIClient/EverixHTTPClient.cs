@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace EverixAPIClient
 {
-    class EverixHTTPClient
+    public class EverixHTTPClient
     {
         private static HttpClient client;
         private string baseAddress;

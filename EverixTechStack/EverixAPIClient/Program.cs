@@ -6,9 +6,9 @@ using System.IO;
 
 namespace EverixAPIClient
 {
-    class Program
+    public class Program
     {
-        private static EverixHTTPClient client;
+        public static EverixHTTPClient client;
 
         static async Task Main(string[] args) 
         { 
@@ -20,7 +20,7 @@ namespace EverixAPIClient
         }
 
 
-        private static async Task CreateHTTPClient()
+        public static async Task CreateHTTPClient()
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Path.Combine(AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.IndexOf("bin"))))
