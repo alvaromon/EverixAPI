@@ -10,8 +10,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using API.Models;
 
-namespace EverixAPI
+
+namespace API
 {
     public class Startup
     {
@@ -25,6 +28,7 @@ namespace EverixAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<PrototypeDBContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("PrototypeDBContext")));
             services.AddControllers();
         }
 
@@ -40,7 +44,7 @@ namespace EverixAPI
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            // app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

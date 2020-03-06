@@ -1,6 +1,6 @@
 using System;
 
-namespace EverixAPI
+namespace API
 {
     public class WeatherForecast
     {

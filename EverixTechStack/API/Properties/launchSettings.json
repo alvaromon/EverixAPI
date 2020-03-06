@@ -4,8 +4,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:50802",
-      "sslPort": 44340
+      "applicationUrl": "http://localhost:54988",
+      "sslPort": 44334
     }
   },
   "profiles": {
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "EverixAPI": {
+    "API": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",

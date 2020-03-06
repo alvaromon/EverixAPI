@@ -1,0 +1,6 @@
+{
+  "httpClient": {
+    "baseAddress": "https://localhost:44334/",
+    "apiPath": "api/v1/"
+  }
+}
